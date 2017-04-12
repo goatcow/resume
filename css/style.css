@@ -1,0 +1,30 @@
+body {
+	max-width: 800px;
+	margin: auto;
+	
+}
+
+address {
+
+}
+
+.right {
+	text-align: right;
+	position: relative;
+	right: 0px;
+}
+
+header {
+	position: fixed;
+
+}
+
+hr {
+	color: #1E90FF;
+}
+
+body hr:first-child {
+	
+	color: orange;
+	margin-top: 200px;
+}
