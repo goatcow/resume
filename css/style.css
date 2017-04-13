@@ -55,7 +55,18 @@ header {
 	background-color: white;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 header h1 {
+	transition: slideInFromLeft;
+	animation: 500ms ease-out 0s 1 slideInFromLeft;
 	flex-grow: 1;
 	
 }
