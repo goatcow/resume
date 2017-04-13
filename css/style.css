@@ -6,8 +6,10 @@ body {
 }
 
 b {
-	font: italic normal;
+	font-weight: bold;
+	font-style: italic;
 	color: grey;
+	margin-left: 5px;
 }
 
 h1{
@@ -19,7 +21,7 @@ h2 {
 }
 
 h3{
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 h1, h2, h3, p, address, ul {
@@ -46,7 +48,7 @@ header {
 
 
 header + * {
-	margin-top: 180px;
+	margin-top: 140px;
 }
 
 footer {
