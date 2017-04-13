@@ -1,0 +1,2 @@
+when user scrolls down my fixed header compresses up small at the top of the page. -ah but this requires javascript to keep the sections after header from sticking to the bottom of the changing height header.
+http://stackoverflow.com/questions/7402635/css-make-content-appear-beneath-a-fixed-div-element
