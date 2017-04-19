@@ -34,8 +34,11 @@ address {
 	text-align: right;
 	align-content: flex-end;
 	flex-grow: 1;
-}
 
+	transition: slideInFromRight;
+	animation: 500ms ease-out 0s 1 slideInFromRight;
+
+}
 
 section {
 	border-bottom: 2px solid #1E90FF;
@@ -60,15 +63,37 @@ header {
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(100px);
   }
 }
 
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
 header h1 {
-	transition: slideInFromLeft;
-	animation: 500ms ease-out 0s 1 slideInFromLeft;
+	/* transition: slideInFromLeft 500ms;
+	 animation: 500ms ease-out 0s 1 slideInFromLeft; */
 	flex-grow: 1;
-	
+	background-color: blue;
+}
+
+header h1:hover {
+	transition: background-color: red 1s;
 }
 
 header + * {

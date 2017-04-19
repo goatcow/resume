@@ -5,7 +5,7 @@ animate in the different parts of the resume with quick bounces
 
 take a picture and fix it on the header with some sort of office/tree background, and my face. blur its edges so it does not obscure the address and My name.
 
-
+wait until the entire page loads before starting the animations
 
 
 
