@@ -35,13 +35,12 @@ address {
 	align-content: flex-end;
 	flex-grow: 1;
 
-	transition: slideInFromRight;
-	animation: 500ms ease-out 0s 1 slideInFromRight;
-
+	animation: 600ms ease-out 0s 1 slideInFromRight;
 }
 
 section {
 	border-bottom: 2px solid #1E90FF;
+	animation: slideInFromBottom 1200ms;
 }
 
 header {
@@ -58,12 +57,32 @@ header {
 	background-color: white;
 }
 
+header h1 {
+	animation: 600ms ease-out 0s 1 slideInFromLeft; 
+	flex-grow: 1;
+}
+
+header + * {
+	margin-top: 113px;
+}
+
+footer {
+	height: 20px;
+}
+
+/*animations*/
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
   }
+  75% {
+  	transform: translateX(20px);
+  }
+  90% {
+  	transform: translateX(-10px);
+  }
   100% {
-    transform: translateX(100px);
+    transform: translateX(0);
   }
 }
 
@@ -71,6 +90,12 @@ header {
 	0% {
 		transform: translateX(100%);
 	}
+	75% {
+  		transform: translateX(-20px);
+  	}
+  	90% {
+  		transform: translateX(10px);
+  	}
 	100% {
 		transform: translateX(0);
 	}
@@ -78,28 +103,9 @@ header {
 
 @keyframes slideInFromBottom {
 	0% {
-		transform: translateY(100%);
+		transform: translateY(2000px);
 	}
 	100% {
 		transform: translateY(0);
 	}
-}
-
-header h1 {
-	/* transition: slideInFromLeft 500ms;
-	 animation: 500ms ease-out 0s 1 slideInFromLeft; */
-	flex-grow: 1;
-	background-color: blue;
-}
-
-header h1:hover {
-	transition: background-color: red 1s;
-}
-
-header + * {
-	margin-top: 110px;
-}
-
-footer {
-	height: 20px;
 }
